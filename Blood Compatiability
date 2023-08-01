@@ -1,0 +1,21 @@
+#Blood Compatibility plays very important role whlie Blood Donation and Organ Transplantion.
+#This Project helps to know you your Blood Compatibility by just knowing your Blood Group.
+
+
+Answer=input("Are you interested to donate blood? ").lower()   #Input users interest
+if Answer!="yes":  #if input is not yes
+    quit()
+else:     #if input is yes
+    blood_type=input("Please enter your blood group: ").lower()     #Input as blood group
+    if blood_type=='o':     #if blood group is o
+        print("You can donate to people having blood group: A, B, AB, O ")
+        print("You can recive blood form people having blood group: O")    
+    if blood_type=='a':      #if blood group is a
+        print("You can donate to people having blood group: A, AB ")
+        print("You can recive blood form people having blood group: A, O")
+    if blood_type=='b':       #if blood group is b
+        print("You can donate to people having blood group: B, AB")
+        print("You can recive blood form people having blood group: B, O")
+    if blood_type=='ab':       #if blood group is ab
+        print("You can donate to people having blood group: AB ")
+        print("You can recive blood form people having blood group: A, B, AB, O")
